@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>clean3000</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div id="logo">
+            <img src="./img/logo-clean3000.png" alt="logo">
+        </div>
+
+        <div class="title">
+            <h1>avis de passage</h1>
+        </div>
+
+        <div class="formulaire">
+
+         <form action="form.php" method="get">
+
+            <div>
+                <label for="inputCustomerName">Nom de l'entreprise/ou client</label>
+                <input name="customerName" type="text" id="inputCustomerName" alt="nomDelEntreprise" required >
+            </div>
+
+            <div>
+                <label for="inputDate">Notre technicien est intervenu pour l'entretien de la vitrerie le:</label>
+                <input type="date" name="date" id="inputDate" alt="date" >
+            </div>
+
+            <div>
+                <label for="inputObservations" class="observations">observations</label>
+                <textarea type="textarea" name="observations" id="InputObservations" alt="champDeTexte"></textarea>
+            </div>
+
+            <div>
+                <p>Merci de votre confiance.</p>
+            </div>
+            
+            <div class="block">
+
+                <label for="inputSignatureTehnicien">Signature du technicien:</label>
+                <input type="text" name="signatureDutechnicien" id="inputSignatureTehnicien" alt="signatureDutechnicien" required >
+
+                <label for="inputSignatureDuClient">Signature du Client / Cachet de l'entreprise:</label>
+                <input type="text" name="signatureDuClient" id="inputSignatureduClient" alt="signatureDuClient" required >
+
+                <input type="button" value="Envoyer" id="submit">
+                
+            </div>
+
+            
+    </form>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
